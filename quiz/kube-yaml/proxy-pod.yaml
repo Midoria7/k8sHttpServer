@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: http-proxy
+  labels:
+    app: proxy-server
+spec:
+  containers:
+  - name: http-proxy
+    image: lairopiw/quiz-proxy
+    ports:
+    - containerPort: 8888
